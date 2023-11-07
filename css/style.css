@@ -1,0 +1,673 @@
+/* Start General CSS Rules */
+:root {
+  --Primary-1: #004d73;
+  --Primary-2: #497ea7;
+  --Primary-3: #d3f4ff;
+  --Secondary-1: #db1415;
+  --Secondary-2: #d59182;
+  --Secondary-3: #ffe5da;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--Primary-1);
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0rem 1.5rem;
+}
+.btn-main-1:link,
+.btn-main-1:visited,
+.btn-main-3:link,
+.btn-main-3:visited {
+  display: inline-block;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--Secondary-1);
+  color: var(--Secondary-3);
+  letter-spacing: 2px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  animation: btn-main 0.75s infinite linear alternate;
+  border: 1px solid transparent;
+  -webkit-animation: btn-main 0.75s infinite linear alternate;
+}
+.btn-main-1:hover,
+.btn-main-1:active,
+.btn-main-3:hover,
+.btn-main-3:active {
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+  border: 1px solid var(--Primary-2);
+}
+/* End General CSS Rules */
+/* Start Typography */
+.card-heading {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.hr-heading {
+  width: 5%;
+  border: 1px solid var(--Secondary-1);
+}
+.section-heading {
+  font-size: 4rem;
+  color: var(--Secondary-2);
+  margin: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* End Typography */
+/* Start Header Section */
+/* Start Logo Bar Section  */
+.logobar {
+  display: flex;
+  align-items: center;
+}
+.logobar-div {
+  flex: 1;
+  padding: 1rem 0rem;
+  display: flex;
+}
+.logobar-div:nth-child(2) {
+  flex: 2;
+  justify-content: center;
+}
+.logobar-div:last-of-type {
+  justify-content: flex-end;
+}
+.logo-img {
+  height: 6.5rem;
+}
+.logobar-text {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+/* End Logo Bar Section */
+/* Start Nav Section */
+nav {
+  background-color: var(--Primary-1);
+}
+.navbar-main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+}
+.navbar-menu-button {
+  display: none;
+}
+.menu-div {
+  width: 35rem;
+  height: 100vh;
+  background-color: rgb(0, 77, 115, 0.8);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  -moz-transition: visibility 0s, opacity 0.5s linear;
+  -ms-transition: visibility 0s, opacity 0.5s linear;
+  -o-transition: visibility 0s, opacity 0.5s linear;
+}
+.navbar-links {
+  text-align: center;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  border: 1px solid transparent;
+}
+.navbar-link:link,
+.navbar-link:visited {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Primary-3);
+  padding: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.navbar-links:hover {
+  background-color: var(--Secondary-1);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border: 0.5px solid var(--Secondary-3);
+}
+.navbar-links:hover .navbar-link {
+  color: var(--Secondary-3);
+}
+/* End Nav Section */
+/* End Header Section */
+/* Start Hero Section */
+.hero-section {
+  background-image: url(../images/04-hero1.jpg);
+  width: 100%;
+  height: 81.5vh;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.hero-section-text-1,
+.hero-section-text-2 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.hero-section-text-1 {
+  background-color: var(--Secondary-1);
+  color: var(--Secondary-3);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.hero-section-text-1:hover {
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -o-transform: scale(0.97);
+}
+.hero-section-text-2 {
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.hero-section-text-2:hover {
+  background-color: var(--Secondary-1);
+  color: var(--Secondary-3);
+  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -o-transform: scale(0.97);
+}
+/* End Hero Section */
+/* Start Main Section */
+/* Start Easy Enrollment Section */
+.enrollment-section {
+  padding: 10rem 0rem;
+  background-color: var(--Primary-1);
+}
+.logo-car-div {
+  display: flex;
+  justify-content: center;
+}
+.logo-car-img {
+  width: 35rem;
+  animation: car 2s alternate infinite ease-in-out;
+  -webkit-animation: car 2s alternate infinite ease-in-out;
+}
+.logo-heading-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enrollment-div {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.enrollment-card {
+  flex: 1;
+  background-color: var(--Primary-3);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 2rem 1rem 4rem 1rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.enrollment-div:hover .enrollment-card {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  opacity: 0.3;
+}
+.enrollment-div .enrollment-card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1;
+}
+.card-icon-img {
+  height: 6rem;
+  margin: 2rem 0rem;
+}
+.card-text {
+  font-size: 1.55rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.card-text:last-of-type {
+  margin-bottom: 2rem;
+}
+.enrollment-btn {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.btn-main-2:link,
+.btn-main-2:visited,
+.btn-main-4:link,
+.btn-main-4:visited {
+  display: inline-block;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--Secondary-1);
+  color: var(--Secondary-3);
+  letter-spacing: 2px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.btn-main-2:hover,
+.btn-main-2:active,
+.btn-main-4:hover,
+.btn-main-4:active {
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+  border: 1px solid var(--Primary-2);
+}
+/* End Easy Enrollment Section */
+/* Start Makes Us Different Section */
+.section-different {
+  padding: 10rem 0rem;
+  background-color: var(--Secondary-3);
+}
+.section-different-heading {
+  color: var(--Primary-1);
+}
+.section-different-heading span {
+  color: var(--Secondary-1);
+}
+.different-div-icons {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.icons-card {
+  text-align: center;
+  flex: 1;
+}
+.icons-card:not(:last-of-type) {
+  border-right: 1px solid var(--Primary-1);
+}
+.icon-para {
+  font-size: 5rem;
+  color: var(--Secondary-1);
+  margin-bottom: 1rem;
+}
+/* End Makes Us Different Section */
+/* Start Key Numbers Section */
+.section-numbers {
+  padding: 10rem 0rem;
+  background-color: var(--Primary-3);
+}
+.numbers-div {
+  display: flex;
+}
+.numbers-card {
+  text-align: center;
+  flex: 1;
+}
+.numbers-card:not(:last-of-type) {
+  border-right: 1px solid var(--Secondary-1);
+}
+.numbertext {
+  font-size: 10rem;
+  font-weight: 500;
+}
+.numbertext span {
+  font-size: 5rem;
+  color: var(--Primary-2);
+  font-weight: 500;
+}
+.number-heading {
+  color: var(--Secondary-1);
+}
+/* End Key Numbers Section */
+/* Start Quote Section */
+.section-quote {
+  padding: 20rem 0rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 77, 115, 0.9),
+      rgba(0, 77, 115, 0.6) 60%,
+      transparent
+    ),
+    url(../images/10-choice.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.quote-heading {
+  color: var(--Secondary-3);
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.quote-text {
+  color: var(--Secondary-2);
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+/* End Quote Section */
+/* Start Packages Section */
+.section-packages {
+  padding: 10rem 0rem;
+}
+.packages-heading {
+  color: var(--Primary-1);
+}
+.packages-car-div {
+  display: flex;
+  justify-content: center;
+}
+.packages-car-img {
+  width: 35rem;
+  animation: car 2s alternate infinite ease-in-out;
+  -webkit-animation: car 2s alternate infinite ease-in-out;
+}
+.packages-div {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.packages-card {
+  flex: 1;
+  background-color: var(--Primary-3);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  padding: 0rem 0rem 3rem 0rem;
+}
+.package-heading {
+  text-align: center;
+  color: var(--Primary-3);
+  background-color: var(--Primary-1);
+  padding: 2rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.packages-card:nth-of-type(2) .package-heading,
+.packages-card:nth-of-type(4) .package-heading {
+  color: var(--Secondary-3);
+  background-color: var(--Secondary-1);
+}
+.packages-card:nth-of-type(2),
+.packages-card:nth-of-type(4) {
+  background-color: var(--Secondary-3);
+}
+.packages-div:hover .packages-card {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  opacity: 0.3;
+}
+.packages-div .packages-card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1;
+}
+.packages-text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 2rem 0rem;
+}
+.price-hr {
+  width: 40%;
+  border: 1px dashed var(--Primary-1);
+  margin: auto;
+}
+.package-text {
+  font-size: 1.7rem;
+  padding: 1.5rem;
+}
+.text-hr {
+  width: 40%;
+  border: 1px solid rgb(73, 126, 167, 0.2);
+  margin: auto;
+}
+.packages-btn-para {
+  margin-top: 3rem;
+}
+.packages-btn-para:hover,
+.packages-btn-para:active {
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+}
+.package-unique-text {
+  color: var(--Secondary-1);
+  font-weight: 400;
+}
+/* End Packages Section */
+/* Start Contact Us Form Section */
+.section-contact {
+  padding: 10rem 0rem;
+  background-color: var(--Primary-3);
+}
+.form-div {
+  padding: 2rem;
+  width: 60rem;
+  margin: auto;
+}
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.textinput {
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--Primary-2);
+  border-bottom: 5px solid var(--Primary-2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: var(--Primary-1);
+  flex: 1;
+}
+.textinput::placeholder {
+  color: var(--Primary-1);
+}
+option,
+optgroup {
+  background-color: var(--Primary-3);
+}
+.textinput:focus {
+  outline: none;
+  border: 1px solid var(--Primary-1);
+  border-bottom: 5px solid var(--Primary-1);
+}
+.submitinput {
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  background-color: var(--Primary-1);
+  color: var(--Primary-3);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.submitinput:hover {
+  background-color: var(--Secondary-1);
+  color: var(--Secondary-3);
+}
+/* End Contact Us Form Section */
+/* End Main Section */
+/* Start Footer Section */
+footer {
+  padding: 5rem 0rem;
+  background-color: var(--Primary-1);
+}
+.logo-light-div {
+  display: flex;
+  justify-content: center;
+}
+.logo-light-img {
+  height: 10rem;
+  animation: logo-light 0.75s alternate infinite ease-in-out;
+  -webkit-animation: logo-light 0.75s alternate infinite ease-in-out;
+}
+.footer-icons-div {
+  display: flex;
+  margin-top: 3rem;
+  border-top: 1px solid var(--Primary-3);
+  border-bottom: 1px solid var(--Primary-3);
+  padding: 3rem 0rem;
+}
+.footer-icon {
+  text-align: center;
+  color: var(--Primary-3);
+  flex: 1;
+}
+.footer-icon-para {
+  font-size: 3rem;
+}
+.footer-icon-text {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.footer-icon:not(:last-of-type) {
+  border-right: 1px solid var(--Primary-3);
+}
+.footer-contact-div {
+  display: flex;
+  margin-top: 3rem;
+}
+.footer-contact-text {
+  flex: 1;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Primary-3);
+  display: flex;
+  align-items: center;
+}
+.footer-contact-text:nth-of-type(2) {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.25rem;
+}
+.footer-contact-text > a {
+  color: var(--Primary-3);
+  font-size: 2.75rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.footer-contact-text > a:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+/* End Footer Section */

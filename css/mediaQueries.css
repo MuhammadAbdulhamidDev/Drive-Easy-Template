@@ -1,0 +1,420 @@
+/*######################## $DeskTop First Method$ #############################*/
+/* Most Common Used Break Points < 1400px _ 1200px _ 992px _ 768px _ 576px */
+/*#############################################################################*/
+
+/*#############################################################################*/
+/*########################## $XX-Large < (1400px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 1399.98px) {
+  /* Container */
+  .container {
+    max-width: 1140px;
+  }
+  /* Easy Enrollment Section */
+  .enrollment-card {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+  .packages-car-img,
+  .logo-car-img {
+    width: 33rem;
+  }
+  /* Makes Us Different Section */
+  .icons-card > .card-heading {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+  /* Key Numbers Section */
+  .numbertext {
+    font-size: 9rem;
+  }
+  .number-heading {
+    font-size: 2rem;
+  }
+  /* Packages Section */
+  .package-text {
+    text-align: center;
+  }
+  .package-unique-text {
+    font-size: 1.65rem;
+    padding: 1.5rem 1rem;
+  }
+}
+/*#############################################################################*/
+/*########################### $X-Large < (1200px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 1199.98px) {
+  /* Container */
+  .container {
+    max-width: 960px;
+  }
+  /* Nav Section */
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    padding: 1.5rem 1rem;
+  }
+  /* Hero Section */
+  .hero-section-text-1,
+  .hero-section-text-2 {
+    font-size: 2.5rem;
+  }
+  /* Easy Enrollment Section */
+  .enrollment-div {
+    flex-wrap: wrap;
+  }
+  .enrollment-card {
+    min-width: calc((100% - 3rem) / 2);
+  }
+  /* Makes Us Different Section */
+  .icons-card > .card-heading {
+    font-size: 1.7rem;
+    letter-spacing: 0.25px;
+  }
+  /* Key Numbers Section */
+  .numbertext {
+    font-size: 8rem;
+  }
+  .number-heading {
+    font-size: 1.7rem;
+  }
+  /* Packages Section */
+  .packages-div {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  .packages-card {
+    min-width: calc((100% - 5rem) / 2);
+  }
+  .package-unique-text {
+    font-size: 1.7rem;
+    padding: 1.5rem;
+  }
+}
+/*#############################################################################*/
+/*############################ $Large < (992px)$ #############################*/
+/*#############################################################################*/
+@media (max-width: 991.98px) {
+  /* Container */
+  .container {
+    max-width: 720px;
+  }
+  /* Logo Bar Section */
+  .logo-img {
+    height: 6rem;
+  }
+  .logobar-text {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+  .btn-main-1:link,
+  .btn-main-1:visited {
+    font-size: 1.75rem;
+    padding: 1.2rem 2rem;
+    letter-spacing: 1px;
+  }
+  /* Nav Section */
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 1.45rem;
+    letter-spacing: 0.5px;
+    padding: 1.5rem 0.5rem;
+  }
+  /* Hero Section */
+  .hero-section-text-1,
+  .hero-section-text-2 {
+    font-size: 2.3rem;
+  }
+  /* Easy Enrollment Section */
+  .packages-car-img,
+  .logo-car-img {
+    width: 30rem;
+  }
+  /* Makes Us Different Section */
+  .section-different-heading {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+  .icons-card > .card-heading {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+  .icons-card {
+    min-width: 50%;
+  }
+  .icons-card:nth-of-type(1),
+  .icons-card:nth-of-type(2) {
+    margin-bottom: 5rem;
+  }
+  .icons-card:nth-of-type(2) {
+    border-right: 0;
+  }
+  /* Key Numbers Section */
+  .numbers-div {
+    flex-wrap: wrap;
+  }
+  .numbers-card {
+    min-width: 50%;
+  }
+  .numbers-card:nth-of-type(1),
+  .numbers-card:nth-of-type(2) {
+    margin-bottom: 5rem;
+  }
+  .numbers-card:nth-of-type(2) {
+    border-right: 0;
+  }
+}
+/*#############################################################################*/
+/*############################# $Medium < (768px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 767.98px) {
+  /* Container */
+  .container {
+    max-width: 540px;
+  }
+  /* Logo Bar Section */
+  .logobar-div:nth-child(2) {
+    display: none;
+  }
+  /* Nav Section */
+  .navbar-links {
+    display: none;
+  }
+  .navbar-menu-button {
+    display: block;
+    flex: 1;
+    color: #d3f4ff;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    text-align: right;
+  }
+  .menu-label {
+    position: relative;
+    cursor: pointer;
+  }
+  .menu-label::after {
+    content: "Menu";
+    font-size: 1.75rem;
+    font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+  }
+  .menu-checkbox:checked + .menu-label::after {
+    content: "X";
+    position: fixed;
+    right: 2rem;
+  }
+  .menu-checkbox:checked ~ .menu-div {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-link {
+    width: 100%;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  .navbar-link:hover {
+    background-color: var(--Secondary-1);
+    color: var(--Secondary-3);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border: 0.5px solid var(--Secondary-3);
+  }
+  /* Hero Section */
+  .hero-section-text-1,
+  .hero-section-text-2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 1rem 1rem;
+  }
+  /* Easy Enrollment Section */
+  .section-heading {
+    font-size: 3.75rem;
+  }
+  .enrollment-card {
+    min-width: 100%;
+    padding: 0rem 2rem;
+  }
+  /* Makes Us Different Section */
+  .section-different-heading {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+  .icons-card > .card-heading {
+    font-size: 1.75rem;
+  }
+  /* Packages Section */
+  .packages-div {
+    gap: 3rem 2rem;
+  }
+  .package-unique-text {
+    font-size: 1.65rem;
+    padding: 1.5rem 1rem;
+  }
+  /* Contact Us Form Section */
+  .form-div {
+    width: 50rem;
+  }
+  /* Footer */
+  .footer-icons-div {
+    flex-wrap: wrap;
+    gap: 3rem 0rem;
+  }
+  .footer-icon {
+    min-width: 45%;
+  }
+  .footer-icon:nth-of-type(2),
+  .footer-icon:nth-of-type(4) {
+    border-right: 0;
+  }
+  .footer-contact-div {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    margin-top: 0;
+  }
+  .footer-contact-text:nth-of-type(1) {
+    justify-content: center;
+  }
+  .footer-contact-text:nth-of-type(2) {
+    gap: 2.5rem;
+    justify-content: center;
+    border-bottom: 1px solid var(--Primary-3);
+    padding: 1rem 0rem;
+  }
+}
+/*#############################################################################*/
+/*############################ $Small < (576px)$ ##############################*/
+/*#############################################################################*/
+@media (max-width: 575.98px) {
+  /* Container  */
+  .container {
+    max-width: 100%;
+  }
+  /* Nav Section */
+  .menu-div {
+    width: 100%;
+  }
+  /* Hero Section */
+  .hero-section-text-1,
+  .hero-section-text-2 {
+    font-size: 1.6rem;
+    letter-spacing: 0.25px;
+    padding: 1rem 1rem;
+  }
+  /* Easy Enrollment Section */
+  .section-heading {
+    font-size: 2.5rem;
+  }
+  .packages-car-img,
+  .logo-car-img {
+    width: 20rem;
+  }
+  .card-icon-img {
+    height: 5rem;
+  }
+  /* Makes Us Different Section */
+  .icons-card {
+    min-width: 100%;
+  }
+  .icons-card:nth-of-type(1),
+  .icons-card:nth-of-type(2) {
+    margin-bottom: 0rem;
+  }
+  .icons-card:nth-of-type(1),
+  .icons-card:nth-of-type(3) {
+    border-right: 0;
+  }
+  .different-div-icons {
+    gap: 5rem;
+  }
+  .section-different-heading {
+    font-size: 2.25rem;
+    margin: 1rem;
+    letter-spacing: 0.5px;
+  }
+  .card-heading {
+    font-size: 1.9rem;
+    font-weight: 300;
+  }
+  /* Key Numbers Section */
+  .numbers-card {
+    min-width: 100%;
+  }
+  .numbers-div {
+    gap: 5rem;
+  }
+  .numbers-card:nth-of-type(1),
+  .numbers-card:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  .numbers-card:nth-of-type(1),
+  .numbers-card:nth-of-type(3) {
+    border-right: 0;
+  }
+  .number-heading {
+    font-size: 1.9rem;
+    font-weight: 300;
+  }
+  /* Quote Section */
+  .btn-main-2:link,
+  .btn-main-2:visited,
+  .btn-main-4:link,
+  .btn-main-4:visited {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 2px;
+  }
+  .section-quote {
+    padding: 20rem 0rem;
+    background-position: right;
+  }
+  .quote-div {
+    text-align: center;
+  }
+  .quote-heading {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+  .quote-text {
+    font-size: 2rem;
+  }
+  /* Packages Section */
+  .packages-div {
+    gap: 5rem;
+    padding: 0rem 2rem;
+  }
+  .packages-card {
+    min-width: 95%;
+  }
+  .package-heading {
+    font-size: 2rem;
+  }
+
+  /* Contact Us Form Section */
+  .form-div {
+    width: 100%;
+  }
+  .textinput {
+    font-size: 1.75rem;
+  }
+  /* Footer */
+  .logo-light-img {
+    height: 8rem;
+  }
+}
