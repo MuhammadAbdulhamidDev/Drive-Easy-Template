@@ -62,9 +62,10 @@
   /* Easy Enrollment Section */
   .enrollment-div {
     flex-wrap: wrap;
+    gap: 5rem;
   }
   .enrollment-card {
-    min-width: calc((100% - 3rem) / 2);
+    min-width: calc((100% - 5rem) / 2);
   }
   /* Makes Us Different Section */
   .icons-card > .card-heading {
@@ -245,10 +246,19 @@
   .section-heading {
     font-size: 3.75rem;
   }
+  .enrollment-div {
+    gap: 3rem 2rem;
+  }
   .enrollment-card {
-    min-width: 100%;
+    min-width: 100% / 2;
     padding: 0rem 2rem;
   }
+  .enrollment-card > .card-heading {
+    font-size: 1.75rem;
+  }
+  .card-icon-img {
+    height: 5rem;
+}
   /* Makes Us Different Section */
   .section-different-heading {
     font-size: 3rem;
@@ -325,8 +335,8 @@
   .logo-car-img {
     width: 20rem;
   }
-  .card-icon-img {
-    height: 5rem;
+  .enrollment-card {
+    min-width: 100%;
   }
   /* Makes Us Different Section */
   .icons-card {

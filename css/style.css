@@ -130,11 +130,11 @@ nav {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
-  -moz-transition: visibility 0s, opacity 0.5s linear;
-  -ms-transition: visibility 0s, opacity 0.5s linear;
-  -o-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0s linear;
+  -webkit-transition: visibility 0s, opacity 0s linear;
+  -moz-transition: visibility 0s, opacity 0s linear;
+  -ms-transition: visibility 0s, opacity 0s linear;
+  -o-transition: visibility 0s, opacity 0s linear;
 }
 .navbar-links {
   text-align: center;
@@ -258,9 +258,11 @@ nav {
   display: flex;
   gap: 3rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 .enrollment-card {
   flex: 1;
+  cursor: pointer;
   background-color: var(--Primary-3);
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -442,11 +444,13 @@ nav {
 }
 .packages-div {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 .packages-card {
   flex: 1;
+  cursor: pointer;
   background-color: var(--Primary-3);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
